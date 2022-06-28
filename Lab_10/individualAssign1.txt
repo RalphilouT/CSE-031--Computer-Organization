@@ -1,0 +1,39 @@
+log2(block_size) = num_offset_bits
+each set = N blocks
+log2(sets) = num_index_bits 
+num_blocks * size_of_block = size_of_cache 
+#sets = num_blocks/N
+
+address bits = tag + index + offset
+
+#bits per row = tag + v + b +#bits ind block
+
+
+1.How many levels of caches does your CPU have (L1, L2, L3, etc.)? 
+Is there separate L1 cache for data and instructions?
+    I have L1 D-CACHE, L1 I-CACHE, L2 CACHE, L3 CACHE
+
+2.How big is each level of cache?
+    L1 D-CACHE - 32 KBytes - 8-way set associative
+    L1 I-CACHE - 64 KBytes - 4-way set associative
+    L2 CACHE -  512 KBytes - 8-way set associative
+    L3 CACHE -  8MBytes - 16-way set associative
+
+3.What is the block size (sometimes it is called line size)?
+    64 bytes line size for all of them
+
+
+4.Are the caches direct-mapped or set associative? If set associative, 
+how many ways?
+    L1 D-CACHE - 32 KBytes - 8-way set associative
+    L1 I-CACHE - 64 KBytes - 4-way set associative
+    L2 CACHE -  512 KBytes - 8-way set associative
+    L3 CACHE -  8MBytes - 16-way set associative
+
+5.With L1 data cache, how many tag bits, index bits, and offset bits?
+   - offset is log2(block_size) = num_offset_bits -> log2(64)= 6 bits
+   - index bits
+        8 way -> 8*64 = 512 -> 32K/512 = 63
+        also #sets = num_blocks/N where N is 8 -> 512 / 8 = 64
+        -> 63 sets or 64 sets -> log2(sets) = num_index_bits = 6 bits
+        64 -6 -6 = 52 bits for tag

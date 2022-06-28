@@ -1,0 +1,27 @@
+TPS 1  
+1. Code
+2. Code
+3. Code
+4. Code
+5. No we do not need to put in data segment, it will be put into t3
+6. Verify
+
+TPS 2
+1. Code
+2. Code
+3. Code
+4. Use a0 as the argument x
+5. the returned should be in v registers either v0 or v1
+    To print the return value, syscall needs v0 and the integer to print to be in register a0
+6. the first thing is the a0 registers
+7. The first thing is to save the ra register or the argument register
+8. Code
+9. Code
+10. Argument will update everytime recursion is called
+    Original argument is also need for other recursion calls
+11. Code
+12. the argument will not be the same as we intended
+    The return value will be diminish or overwritten
+13. Code
+14. Code
+15. Code

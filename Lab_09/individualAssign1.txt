@@ -1,0 +1,93 @@
+Line 7
+    addi $s0, $zero, -15
+    I Format
+    8 in hex | 0 in decimal | 16 in dedimal | -15 decimal
+        -15 in decimal -> by using 2 complement
+            0000000000001111 is 15
+            1111111111110000+1 = 1111111111110001 which is -15
+    00 1000 | 00000 | 10000 | 1111111111110001
+    0010 0000 0001 0000 1111 1111 1111 0001
+    2 0 1 0 15 15 1
+        15 is F in hexa
+    -> 0x2010FFF1 or 00100000000100001111111111110001
+    
+    0x2010FFF1
+    0010 0000 0001 0000 1111 1111 1111 0001
+    00 1000 | 00000 | 10000 | 1111111111110001
+        00 1000 - Indicates I-Format - addi
+        calc 1111111111110001 = -15
+        rs = $zero
+        rt = 16 -> $s0
+        do add of rs and rt
+        put answer in rt which is 16 = s0
+    addi $s0, $zero, -15
+
+Line 14
+    slt $t0, $s0, $s1
+    R-Format
+    0 in hex | 16 in decimal | 17 in dedimal | 8 decimal| 0 decimal | 2a in hex
+    000000 | 10000 | 10001 | 01000| 00000 | 10 1010
+    0000 0010 0001 0001 0100 0000 0010 1010
+    0 2 1 1 4 0 2 10
+        10 in hex is A
+    -> 0x0211402A or 00000010000100010100000000101010
+
+    0x0211402A
+    0000 0010 0001 0001 0100 0000 0010 1010
+    000000 indicates R-format
+        -> 000000 | 10000 | 10001 | 01000| 00000 | 10 1010
+        looks at func 101010 which is 8 -> it is slt
+        looks at rs and rt which is 16 and 17 (s0 and s1)
+        Does less than and puts value in rd which is 8 (t0)
+    slt $t0, $s0, $s1
+
+Line 17
+    beq $t0, $zero, LEEQ
+    I-Format
+    4 in hex | 8 in decimal | 0 in dedimal | 6 decimal
+    000100 | 01000 | 00000| 0000000000000110 
+    0001 0001 0000 0000 0000 0000 0000 0110
+    1 1 0 0 0 0 0 6
+    -> 0x11000006 or 00010001000000000000000000000110
+
+    0x11000006
+    0001 0001 0000 0000 0000 0000 0000 0110
+        Indicates an I-format
+        -> 000100 | 01000 | 00000| 0000000000000110 
+        000100 indicates beq
+        rs = 8, rt = 0
+        compares 8 (t0) and 0 (zero)
+        the branch does pc+4 and then 6 more instructions to get to the label
+            This will lead us to LEEQ label.
+    beq $t0, $zero, LEEQ
+
+Line 20
+    j GRT
+    J-Format - 000010
+    Address of GRT is 0x0040001C
+        0000 0000 0100 0000 0000 0000 0001 1100
+        cut of 1 byte or 0000 -> 040001C
+        cut out last 2 bit due to not mattering if not there as each instruction goes by 4 bits
+        -> 0000 0100 0000 0000 0000 0001 11 -> 26 bits can fit J-format
+    000010| 00000100000000000000000111
+    0000 1000 0001 0000 0000 0000 0000 0111
+    0 8 1 0 0 0 0 7
+    -> 0x08100007 or 00001000000100000000000000000111
+   
+   0x08100007
+   00001000000100000000000000000111
+   0000 1000 0001 0000 0000 0000 0000 0111
+   indicates it is a J-format as it is 000010 opcode
+   000010| 00000100000000000000000111
+        00000100000000000000000111
+        add 4 0  bits at front and 2 0 bits at the back
+        00000000010000000000000000011100 -> address of the label
+        0000 0000 0100 0000 0000 0000 0001 1100
+        -> 0x0040001c the address where GRT is
+    -> j GRT
+
+        
+
+
+
+

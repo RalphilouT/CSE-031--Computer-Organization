@@ -1,0 +1,55 @@
+TPS 1
+1. Downloaded
+2. Loaded
+3. See the Code, Basic, and Text Segments
+4. 32 bits or 8 bytes
+5. There are 3 types of formats
+    R-Format - add, and adddi
+    I-Format - beq and bne
+    J-Format - j and jal
+6. 
+    A. It is a I-Format
+        The field are opcode, rs,rt,immediate
+    B. The opcode value is 8 in hex
+    C. 0010 0000 0001 0000 0000 0000 0001 1001
+        0x20100019 in hex
+7. 
+    A. The hex is 0x0230402a 
+        0000 0010 0011 0000 0100 0000 0010 1010
+    B. The format is R-Format
+        You can tell because the opcode is 000000
+        There are about 6 fields
+        The fields are opcode, rs,rt,rd,shamt,funct
+    C. 000000 10001 10000 01000 00000 101010
+    D. The instruction is slt
+        You refer to the opcode and the function fields and convert it to hex
+    E. It is the same as the source
+        slt $t0, $s1, $s0
+8.
+    A. It is a I-Format
+    B. opcode - 5
+        rs - 8
+        rt - 0
+        immediate - 1
+    C. The label is LESS
+        The address is 0x0040001c
+    D. No we don't as the adress is 32 bits and we can fit 16 bits.
+    E. The value is how many instruction away from the pc
+        Which is 1 for this source Code
+    F. 0001 0101 0000 0000 0000 0000 0000 0001
+        0x15000001 in hex
+9. 
+    A. it is the J-Format
+        There are 2 fields
+    B. The opcode for j is 2 in hex
+    C. The label is GREQ
+        The address is 0x00400030
+    D. You can use 26 bits. You squeez by leaving out the 4 bits at the front and 2 bits at the back
+        PC will have the value for the front 4
+        For the back, the instruction is 4 bytes iteration so we don't use the last two bits as the highest is 3. Therefore useless to represent the iteration
+    E.  000001 0000 0100 0000 0000 0000 0011 00
+        0x08100000c
+        It is the same
+
+
+

@@ -1,0 +1,59 @@
+1.
+    Procedure (https://www.computerhope.com/jargon/p/procedure.htm)
+        is a set of coded instructions that tell a computer how to run a program or 
+        calculation
+    Function (https://www.computerhope.com/jargon/f/function.htm)
+        the overall a group of instructions known as procedure, used by programming 
+        languages to return a single result or set of results
+    Method (https://www.computerhope.com/jargon/m/method.htm)
+        a function that belongs to a class or object. It is bound to that class or object,
+        defined only within that scope of usage
+2.
+3.
+    coded
+4.
+    the address should start at the next line of the jump occured.
+    20
+5.
+    you can use j but not practical since it will be a one time use as doing so 
+    will eventually have lack of use afterwards
+6.
+    Before the jump
+    it is saved in ra
+    the value of the address is in hexadecimal
+    Yes
+7.
+    it will crash since 0 decimal is not hexadecimal
+8.
+    0x00400028
+9.
+    MODIFIED
+10.
+    0x00400028
+11.
+    we use the jal operator
+12.
+    saved
+
+TPS 2
+1.
+    The output will be 38
+    The output is 38
+2.
+    At face value, it acts the same as the c instruction
+3.
+    jump is not adequately saved. ra before sub is overwritten when jal sub is called
+4.
+    the x value is loss when it a0 was also used to sub function
+    and also at line 25
+5.
+    the value x will be loss
+6.
+    fix
+
+
+
+
+
+
+
