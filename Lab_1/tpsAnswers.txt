@@ -1,0 +1,58 @@
+Ralphilou Tatoy
+Worked with - Rodolfo Gutierrez and Serenity Bassett 
+TPS 1
+1. Worked with - Rodolfo Gutierrez and Serenity Bassett 
+
+2.
+https://stackoverflow.com/questions/5430688/compiling-c-and-c-files-together-using-gcc
+https://itsfoss.com/run-c-program-linux/
+https://medium.com/@zibon/basic-linux-command-lines-to-get-started-developing-in-ubuntu-linux-b54def1c2190
+https://web.eecs.umich.edu/~sugih/pointers/make.html
+
+3.  Share
+
+4. bookmarked
+
+TPS 2
+1. Terminal Tab is at the middle-bottom of the screen in remote lab
+    For my local machine, I just open tab on visual code studio
+    a. You can open multiple tabs of terminals in remote tab and also visual code studio
+    b. See different outputs of different files at the same time
+
+2. the command is pwd to see what file it is the workspace sorround but dir tells which files are included by selection that looks like a book
+
+3. configure workspace to direct it to desktop folder
+    cd Desktop
+
+4. create new folder called CSE31 and create a c or cpp file. When the file is opened
+    it should have a directory of CSE31 for that file. -B also works on command line
+    mkdir
+
+
+TPS 3
+1. https://stackoverflow.com/questions/5430688/compiling-c-and-c-files-together-using-gcc
+    https://itsfoss.com/run-c-program-linux/
+    Searching up how to makefile would work also
+
+2. Share
+    https://www.geeksforgeeks.org/gcc-command-in-linux-with-examples/
+
+3. gcc main.c -o main or make a make file
+
+4. The compilation will be shown on terminal. If was is shown is 
+    what you expect, then it is succesful. No errors, etc. Check bash history or use -g
+
+5. -c is Compile and assemble, but do not link. Found in gcc --help in terminal
+
+6. -g Produce debugging information in the operating system’s native format (stabs, COFF, XCOFF, or DWARF). GDB can work with this debugging information. 
+    for debugging purposes (https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html#Debugging-Options). Also known for to Generate debugging information
+
+7.  -o flag
+
+8. Shows an error that says "/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':(.text+0x20): undefined reference to `main'
+    collect2: error: ld returned 1 exit status"
+    a.out
+9. ./main
+
+TPS 4
+1. pseudoAverages

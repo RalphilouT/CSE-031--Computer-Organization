@@ -1,0 +1,29 @@
+TPS 1
+1. MIPS Assembler and Runtime Simulator
+2. Download mars and/or java
+3. In assignment page
+4. 
+    a. Run it by dropping down file and open file
+    b. You drop down run and can be assembled
+    c. you click wrench to run
+    d. yes
+    e. You click the button with the green and one next to it
+    f. you stop and do the same thing
+
+TPS 2
+1.
+    a. .data - subsequent items stored in data segments at next available address
+    b. .word - 13 store the listed value(s) as 32 bit words on word boundary
+    c. .text - subsequent items (instruction) stored in text segment at next available address
+    The directives mean the following, .word is essentially creating some space in memory to hold data. Each item following it is 4 bytes long, 
+    .text tells the assembler to switch to the text segment (where code goes), and .data tells the assembler to switch to the data segment (where data goes).
+
+2.  line ten the two registers are the same then it will jump to finish
+3. Jumps to fib like a for loop
+4. When you run it, the execute tab will have breakpoints on the left side
+5. You will need to click on the single step
+6. right side has the content of the registers step by step or the end also
+7. 0x10010000 in data segment
+8. Input and output
+    For this it is to print output for 19
+    for 21, it is ending the execution

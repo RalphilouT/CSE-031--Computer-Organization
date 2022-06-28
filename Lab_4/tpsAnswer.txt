@@ -1,0 +1,26 @@
+TPS 1
+1. I expect the print of 2 represented in hexadecimal
+2. I expect it to be a character 'A' but represented in int
+3. it printed 44434241
+4. it printed 2. I am lost by this discovery
+5. 
+    a. one array was allocated in this program
+    b. yes
+    c. verified that it is true
+6. Loop
+7. Draw
+    a. 
+8. Loop
+9. different increments of the address
+10. the int is incremented by 4 while the character is incremented by 1
+
+TPS 2
+1. Line 8 creates a double pointer of size array so it means there is an array that each element points to another array
+2. You access it by using *(array+i) where i is each index
+3. *(*array+i)+j) is how you would use for arr[i][j]
+4. verify
+    We need to pass the size to know the limit of each array to print. Need to use for loop. The double array might be a different size than the single pointer array. 
+    Not stored in C
+5. compelete print array
+6. modify
+7. call

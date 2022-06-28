@@ -1,0 +1,17 @@
+Assignment 1
+1. What line caused the segmentation fault?
+    The problem is line 18. The scanf expects an address for input but it is given a int. Which gives a bus error
+2. How do you fix the line so it works properly?
+    fix it by replacing scanf("%d", input) with scanf("%d", &input);
+3. What is the bug here?
+    The function is not returning the new sum but is using the sum in main which is zero. That is why the average outputs zero.
+4. How do you fix it?
+    To fix this, you can use pointer to be able to change the value of the sum out of the main.
+    double * esum = &sum;
+    and use esum for the parameter argument
+    Make use to dereference sum in the read_value function to change the value of sum in the main function
+
+Assignment 2
+1. The output for those input is HELLO!hello!llo! therefore it was not expected as it should be HELLO!hello!. It didn't have a null pointer at the end
+2. The output for those input is HI!hi!hellhi! therefore it was not expected as it should be HI!hi!. Is didn't have a null pointer and it was using the same array.
+3. The output for those input is Hello! HowI am fine, thank you!I am fine, thank you!xs and some ?? symbols. Size of the string might be affecting this result/output

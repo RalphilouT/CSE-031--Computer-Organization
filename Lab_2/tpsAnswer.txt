@@ -1,0 +1,30 @@
+TPS 1
+1.
+2.https://code.visualstudio.com/docs/cpp/config-linux
+    https://code.visualstudio.com/docs/cpp/cpp-debug
+    https://code.visualstudio.com/docs/cpp/launch-json-reference
+
+3.
+4.
+
+TPS 2
+1. I run build task and start the debugging process
+    gcc -g punishment.c
+
+2. You create launch and task with json type of file and navigate terminal and run menu
+3. I go to the run tab and select "Start debugging"
+4. To do breakpoint, you press the left side of the number
+    It stops the debugger at that position
+5. It is gone
+6. left side of the code
+7. you press continue button
+8. red square exits the debugger
+
+TP2 3
+1. The pointers are px, py, and arr. Variables are x and y
+2. The values for x and y is unknown. For arr[0] it will be some pointer to a random number
+3. Initialize the value when you declare them
+4 to 6 changes made pointers file
+7. 
+
+    

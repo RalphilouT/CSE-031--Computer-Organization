@@ -1,0 +1,20 @@
+TPS 1
+1.
+    Heap - dynamic storage (malloc()) 
+    Static - global variable storage, basically permanent, entire program run
+    Stack - local variable storage, parameters, return address
+2. 
+    a. 3 variable is declared
+    b. 2 pointers are declared and ptr points to an int and a pointer to a pointer that point to an int
+    c. num/ptr/handle is stored in stack
+    d. ptr will point to heap memory
+3. drawing 
+4. drawing
+
+TPS 2
+1. creates a node (linklist style) that contain two values and a pointer to the next node in the heap
+2. the head/struct is stored in heap since it used malloc
+3. You need to create another node using the same method as head and use next to point at the newly created node. They must be in malloc also.
+
+
+    

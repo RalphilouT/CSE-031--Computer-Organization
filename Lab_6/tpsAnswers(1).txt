@@ -1,0 +1,21 @@
+TPS1
+1. The starting for text segment is 0x00400000
+    While the data segment is 0x100100000
+2. The source shows actual register names rather than numbers that is use in Basic. Our code that was assembled initially
+    The source is our code while basic is more operation shown rather than compressed.
+3. For data segment, there is about 32 bytes different between each location
+    For each value, there is 4 bytes difference or 32 bits.
+4. There are 8 columns in each address, 8 words per row
+5. Each address stores 32 bytes and each value is 4 bits
+6. m:	.word 20
+    and set that to a register
+7. In data segment it is on address 0x10010000 at value +4 -> 0x10010004
+8. str1: .asciiz "I love CSE31!"
+9. It is at address 0x10010000 at +8,+c,+10 -> 0x10010008,0x1001000c,0x10010010
+10. Each value store 4 bytes = 4 Ascii. 4 bits = 1 character. Lower address takes lower significance. The string is stored backwards
+11. 
+12 . la is load address of n which is in data segment which is 0x10010000 the same place as 13 and then lw loads 13 into t3
+13. 
+TPS 2
+1. Simplicity of the hardware
+DO CODE

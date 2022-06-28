@@ -1,0 +1,27 @@
+Ralphilou Tatoy
+loop <- 1
+x <- 0
+x1 <- 0
+y <- 0
+y1 <- 0
+while(loop!=0){
+    print instruction
+    loop<-take user input
+    if(input = zero)
+        break;  
+    else if (input > 0){
+        x<-add the pos num user input
+        x1<-update number of pos num
+    else if (input < 0)
+        y<-add the pos neg user input
+        y1<-update number of neg num
+
+average neg <- x / x1
+average pos <- y / y1
+if(x=0 && y != 0) then 
+    print average neg
+ifelse (y =0 && x !=0) then
+    print average pos 
+else
+    print average pos
+    print average neg
